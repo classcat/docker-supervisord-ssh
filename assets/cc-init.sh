@@ -6,6 +6,7 @@
 ########################################################################
 
 ### HISTORY ###
+# 05-may-15 : Support a public key as well as a password 
 #
 
 
@@ -15,10 +16,21 @@
 
 function change_root_password() {
   if [ -z "$password" ]; then
-    echo -e "No password specified.\n"
+    echo -e "Warning >> No password specified.\n"
   else
     echo -e "root:${password}" | chpasswd
     # echo -e "${password}\n${password}" | passwd root
+  fi
+}
+
+
+function put_public_key() {
+  if [ -z "$public_key" ]; then
+    echo -e "Warning >> No public key specified.\n"
+  else
+    mkdir -p /root/.ssh
+    chmod 0700 /root/.ssh
+    echo "${public_key}" > /root/.ssh/authorized_keys
   fi
 }
 
@@ -44,6 +56,7 @@ EOF
 
 
 change_root_password
+put_public_key
 proc_supervisor
 
 exit 0
