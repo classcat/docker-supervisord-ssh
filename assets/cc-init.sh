@@ -16,7 +16,7 @@
 
 function change_root_password() {
   if [ -z "$password" ]; then
-    echo -e "Warning >> No password specified.\n"
+    echo "Warning >> No password specified."
   else
     echo -e "root:${password}" | chpasswd
     # echo -e "${password}\n${password}" | passwd root
@@ -26,7 +26,7 @@ function change_root_password() {
 
 function put_public_key() {
   if [ -z "$public_key" ]; then
-    echo -e "Warning >> No public key specified.\n"
+    echo "Warning >> No public key specified."
   else
     mkdir -p /root/.ssh
     chmod 0700 /root/.ssh
