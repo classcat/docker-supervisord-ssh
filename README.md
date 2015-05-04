@@ -27,7 +27,9 @@ $ sudo docker pull classcat/supervisord-ssh
 
 ```
 $ sudo docker run -d --name (container name) \  
--p 2022:22 -e password=(root password) classcat/supervisord-ssh
+-p 2022:22 -e password=(root password) \  
+-e public_key="ssh-rsa xxx" \  
+classcat/supervisord-ssh
 ```
 
 ### example)  
@@ -35,6 +37,10 @@ $ sudo docker run -d --name (container name) \
 ```
 $ sudo docker run -d --name ssh \  
 -p 2022:22 -e password=mypassword classcat/supervisord-ssh
+```
+```
+$ sudo docker run -d --name ssh \
+-p 2022:22 -e public_key="ssh-rsa xxx" classcat/supervisord-ssh
 ```
 ```
 $ sudo docker run -d --name ssh \  
