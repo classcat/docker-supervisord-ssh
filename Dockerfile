@@ -1,4 +1,4 @@
-FROM classcat/ubuntu-supervisord:trusty
+FROM classcat/ubuntu-supervisord2:trusty
 MAINTAINER Masashi Okumura <masao@classcat.com>
 
 WORKDIR /opt
