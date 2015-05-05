@@ -2,7 +2,7 @@
 
 Run sshd daemon under supervisord in a docker container.
 
-## Overview
+## Summary
 
 Ubuntu Vivid/Trusty SSH images with :
 
@@ -10,6 +10,10 @@ Ubuntu Vivid/Trusty SSH images with :
 + sshd
 
 built on the top of the formal Ubuntu images.
+
+## Maintainer
+
+ClassCat Co.,Ltd. ( http://www.classcat.com/ )
 
 ## TAGS
 
