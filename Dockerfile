@@ -1,4 +1,4 @@
-FROM classcat/ubuntu-supervisord:vivid
+FROM classcat/ubuntu-supervisord2:vivid
 MAINTAINER Masashi Okumura <masao@classcat.com>
 
 WORKDIR /opt
