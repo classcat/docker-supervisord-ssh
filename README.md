@@ -13,7 +13,7 @@ built on the top of the formal Ubuntu images.
 
 ## Maintainer
 
-ClassCat Co.,Ltd. ( http://www.classcat.com/ )
+[ClassCat Co.,Ltd.](http://www.classcat.com/)
 
 ## TAGS
 
